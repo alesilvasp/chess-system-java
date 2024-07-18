@@ -87,6 +87,10 @@ public class UI {
             System.out.println("Waiting player: " + ANSI_WHITE + chessMatch.getCurrentPlayer() + ANSI_RESET);
 
         }
+
+        if (chessMatch.getCheck()) {
+            System.out.println("CHECK!");
+        }
     }
 
     private static void printPiece(ChessPiece piece, boolean background) {
